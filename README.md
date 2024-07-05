@@ -1,65 +1,81 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Weather App is a simple React application that allows users to get the current weather information for any city. The application uses the OpenWeatherMap API to fetch weather data.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Fetch current weather data for any city
+- Display temperature, weather conditions, and humidity
+- Responsive design using Bootstrap
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can check out the live demo of the application [here](https://project-weather-app-67mn.vercel.app/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshot
 
-### `npm test`
+![Weather App Screenshot](screenshot.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+Follow these steps to run the project locally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```sh
+   git clone https://github.com/yourusername/project-weather-app.git
+   cd project-weather-app ```
+Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have Node.js installed. Then, install the project dependencies:
 
-### `npm run eject`
+ ```sh
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm install
+ ```
+Get an API key:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Sign up at OpenWeatherMap to get an API key.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Create an .env file:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+In the root directory of your project, create a file named .env and add your OpenWeatherMap API key:
 
-## Learn More
+ ```env
+REACT_APP_OPENWEATHER_API_KEY=your_openweathermap_api_key
+Run the app:
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ ```sh
+npm start
+The application will be available at http://localhost:3000.
+ ```
+Usage
+Enter the name of a city in the input field.
+Click the "Get Weather" button to fetch and display the weather information for the entered city.
+Deployment
+This project can be easily deployed using Vercel:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Push your code to GitHub:
 
-### Code Splitting
+ ```sh
+git add .
+git commit -m "Initial commit"
+git push origin main
+ ```
+Deploy with Vercel:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Log in to Vercel and click "New Project".
+Import your repository from GitHub.
+Set up the environment variable in Vercel with your OpenWeatherMap API key (REACT_APP_OPENWEATHER_API_KEY).
+Click "Deploy".
+Built With
+React
+Bootstrap
+Axios
+OpenWeatherMap API
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ### Deployment
 
